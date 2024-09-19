@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <div class="form-signin text-center">
+      <h1 class="h3 mb-3 font-weight-normal" aria-label="Please Log in">
+        Please Log in
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <input
+          type="text"
+          id="inputUsername"
+          name="username"
+          class="form-control mb-3"
+          formControlName="emailId"
+          placeholder="Username"
+          autofocus
+        />
+        <input
+          type="password"
+          id="inputpassword"
+          name="username"
+          class="form-control mb-3"
+          formControlName="password"
+          placeholder="Password"
+          autofocus
+        />
+        <button class="btn btn-primary" type="submit">Log in</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>
